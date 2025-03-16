@@ -85,3 +85,32 @@ Update the following in `config/configuration.py`:
 - `PROJECT_NUMBER`: Your GitHub project number
 - `ISSUE_TYPE_STORY`: Issue type for stories (e.g., "Feature")
 - `ISSUE_TYPE_TASK`: Issue type for tasks (e.g., "Task")
+
+## My SOEN 390 Repository Configuration:
+
+### Issue Types (In My Organization)
+- Bug, and other types do not affect the burndown.
+![image](https://github.com/user-attachments/assets/0ba7b938-eb56-48bc-9a5f-600e28ac27db)
+
+### Project Tags/Attributes:
+1. Go to your GitHub Project view, and access settings:
+
+![image](https://github.com/user-attachments/assets/72a3534b-48e6-4b74-8876-3580e5b6589d)
+
+2. Ensure that the attributes are as follows:
+
+![image](https://github.com/user-attachments/assets/31ee31e9-b3ec-42ca-9e0e-130ec2fb0ca7)
+- Sprints is not there by default, but **iterations** are. I renamed it (Field Name)
+
+![image](https://github.com/user-attachments/assets/5d8e7b21-2e3d-4dde-8a6a-8d50632f7a74)
+
+### Sample Story / Task
+
+![image](https://github.com/user-attachments/assets/a301b834-bfc5-42ba-b61e-787bb4068994)
+
+- Notice Feature in blue (Feature), and the sub issues are in yellow (Task).
+
+![image](https://github.com/user-attachments/assets/3b2866a6-14b8-4d8c-9949-652b99c50083)
+
+- When creating an issue or subissue, ensure that `Issue Type` is defined. Anything else is optional. 
+
