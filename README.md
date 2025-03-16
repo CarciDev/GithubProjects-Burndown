@@ -55,6 +55,7 @@ project/
 - [ ] Algorithm 2 not tested.
 - [ ] Algorithm 3 not implemented yet (API immature at this point).
 - [ ] Need more testing on different repo's.
+- [ ] Automatically fetch the date for the current iteration (and set it to default when loading the html doc)
 
 ## Burndown Algorithms
 
