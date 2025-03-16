@@ -100,7 +100,7 @@ Update the following in `config/configuration.py`:
 2. Ensure that the attributes are as follows:
 
 ![image](https://github.com/user-attachments/assets/31ee31e9-b3ec-42ca-9e0e-130ec2fb0ca7)
-- Sprints is not there by default, but **iterations** are. I renamed it (Field Name)
+- Sprints is not there by default, but **iterations** are. I renamed it (Field Name). I also created the sprint names to 'Sprint X', x being a number.
 
 ![image](https://github.com/user-attachments/assets/5d8e7b21-2e3d-4dde-8a6a-8d50632f7a74)
 
