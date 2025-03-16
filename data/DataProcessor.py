@@ -164,7 +164,7 @@ class DataProcessor:
             # If still no iterations found, return a default
             if not iterations:
                 print("No iteration values found, using default")
-                default_sprint = getattr(Configuration, "DEFAULT_SPRINT", "Sprint 4")
+                default_sprint = getattr(Configuration, "DEFAULT_SPRINT", "N/A")
                 iterations.add(default_sprint)
                 
             # Convert to sorted list, filtering out None values and empty strings
@@ -199,7 +199,7 @@ class DataProcessor:
         except Exception as e:
             print(f"Error in get_available_sprints: {e}")
             # Return default sprint as fallback
-            default_sprint = getattr(Configuration, "DEFAULT_SPRINT", "Sprint 4")
+            default_sprint = getattr(Configuration, "DEFAULT_SPRINT", "N/A")
             return [default_sprint]
         
     def calculate_burndown(self, story_data, algorithm_type, start_date, end_date, sprint_name):
