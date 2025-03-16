@@ -50,11 +50,11 @@ project/
 
 ## Todo: Known Bugs + Features
 
-- [] Selecting the date on the burndown html might display the date off by 1. 
+- [ ] Selecting the date on the burndown html might display the date off by 1. 
   - To fix: Select the next nearest date so it updates correctly on the graph.
-- [] Algorithm 2 not tested.
-- [] Algorithm 3 not implemented yet (API immature at this point).
-- [] Need more testing on different repo's.
+- [ ] Algorithm 2 not tested.
+- [ ] Algorithm 3 not implemented yet (API immature at this point).
+- [ ] Need more testing on different repo's.
 
 ## Burndown Algorithms
 
@@ -66,7 +66,7 @@ Uses story estimations with percentage completion based on sub-tasks. As tasks a
 
 Focuses only on task estimations. If tasks don't have direct estimations, they inherit proportional points from their parent story.
 
-## Algorithm 3 (Unavailable yet): State based
+### Algorithm 3 (Unavailable yet): State based
 
 Depending on the state of a task within the pipeline (kanban), a percentage of completion is marked. This can reveal granular details and bottlenecks in the pipeline.
 
