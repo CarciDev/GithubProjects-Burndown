@@ -45,14 +45,16 @@ project/
 ## Getting Started
 
 1. Configure GitHub token in `config/configuration.py`
-2. Install requirements:
-   ```
-   pip install gql plotly
-   ```
-3. Run the application:
-   ```
-   python main.py
-   ```
+2. Install requirements.txt in a .venv you can create.
+3. Run with main.py -> outputs as `sprint_burndown.html`
+
+## Todo: Known Bugs + Features
+
+- [] Selecting the date on the burndown html might display the date off by 1. 
+  - To fix: Select the next nearest date so it updates correctly on the graph.
+- [] Algorithm 2 not tested.
+- [] Algorithm 3 not implemented yet (API immature at this point).
+- [] Need more testing on different repo's.
 
 ## Burndown Algorithms
 
@@ -64,7 +66,11 @@ Uses story estimations with percentage completion based on sub-tasks. As tasks a
 
 Focuses only on task estimations. If tasks don't have direct estimations, they inherit proportional points from their parent story.
 
-## Dependencies
+## Algorithm 3 (Unavailable yet): State based
+
+Depending on the state of a task within the pipeline (kanban), a percentage of completion is marked. This can reveal granular details and bottlenecks in the pipeline.
+
+## Core Dependencies
 
 - `gql`: GraphQL client for Python
 - `plotly`: Interactive visualizations
