@@ -50,11 +50,11 @@ project/
 
 ## Todo: Known Bugs + Features
 
-- [] Selecting the date on the burndown html might display the date off by 1. 
+- [ ] Selecting the date on the burndown html might display the date off by 1. 
   - To fix: Select the next nearest date so it updates correctly on the graph.
-- [] Algorithm 2 not tested.
-- [] Algorithm 3 not implemented yet (API immature at this point).
-- [] Need more testing on different repo's.
+- [ ] Algorithm 2 not tested.
+- [ ] Algorithm 3 not implemented yet (API immature at this point).
+- [ ] Need more testing on different repo's.
 
 ## Burndown Algorithms
 
