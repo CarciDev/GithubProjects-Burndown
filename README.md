@@ -66,7 +66,7 @@ Uses story estimations with percentage completion based on sub-tasks. As tasks a
 
 Focuses only on task estimations. If tasks don't have direct estimations, they inherit proportional points from their parent story.
 
-## Algorithm 3 (Unavailable yet): State based
+### Algorithm 3 (Unavailable yet): State based
 
 Depending on the state of a task within the pipeline (kanban), a percentage of completion is marked. This can reveal granular details and bottlenecks in the pipeline.
 
