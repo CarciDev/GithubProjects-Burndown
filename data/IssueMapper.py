@@ -21,7 +21,13 @@ class IssueMapper:
         """
         # Extract nodes from project data
         try:
-            nodes = project_data["organization"]["projectV2"]["items"]["nodes"]
+            if "user" in project_data:
+                nodes = project_data["user"]["projectV2"]["items"]["nodes"]
+            elif "organization" in project_data:
+                nodes = project_data["organization"]["projectV2"]["items"]["nodes"]
+            else:
+                # Fallback for direct data objects or different structures
+                nodes = project_data.get("nodes", [])
         except (KeyError, TypeError):
             nodes = []
             

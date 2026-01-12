@@ -4,7 +4,9 @@ Main entry point for the burndown chart generator.
 import json
 import os
 import traceback
-from api.ProjectFetcher import ProjectFetcher
+from config.configuration import Configuration
+from api.OrgProjectFetcher import OrgProjectFetcher
+from api.UserProjectFetcher import UserProjectFetcher
 from data.IssueMapper import IssueMapper
 from visualization.BurndownChart import BurndownChart
 
@@ -17,7 +19,10 @@ def main():
     # Step 1: Fetch project data from GitHub
     try:
         print("Fetching project data from GitHub...")
-        project_fetcher = ProjectFetcher()
+        if hasattr(Configuration, "ORGANIZATION_NAME"):
+            project_fetcher = OrgProjectFetcher()
+        else:
+            project_fetcher = UserProjectFetcher()
         project_data = project_fetcher.fetch_project_data(save_to_file=True)
         print("Project data fetched successfully.")
     except Exception as e:
